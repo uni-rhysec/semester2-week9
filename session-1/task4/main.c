@@ -16,6 +16,16 @@ int main( void ) {
     // - use traverseI() to display the nodes
     // - which pointer do you pass to traverseI(): front or back?
 
+    join(queue, 3);
+    traverseI(queue->front);
+    join(queue, 6);
+    traverseI(queue->front);
+    join(queue, 9);
+    traverseI(queue->front);
+
+    leave(queue);
+    traverseI(queue->front);
+
     // test leave 
     // - take care to free detached memory
 

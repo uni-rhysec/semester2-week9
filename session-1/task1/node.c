@@ -65,6 +65,11 @@ void traverseI( Node *start ) {
 void traverseW( Node *node ) {  
 
     // your implementation
+    while (node != NULL) {
+        printf("%d ", node->data->value);
+        node = node->next;
+    }
+    printf("\n");
     
     return;
 }

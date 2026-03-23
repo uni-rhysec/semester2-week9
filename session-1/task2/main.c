@@ -16,6 +16,21 @@ int main( void ) {
     push(stack,1);
     traverseI(stack->top);  // display the stack
 
+    pop(stack);
+    traverseI(stack->top);
+    // push values 1-20
+    int i;
+    for (i=1;i<=20;i++) {
+        push(stack,i);
+        traverseI(stack->top);
+    }
+    // pop values 1-20
+    for (i=1;i<=20;i++) {
+        printf("popped %d\n",pop(stack)->data->value);
+        //traverseI(stack->top);
+    }
+
+
     // free stack memory
     freeNodes( stack->top );
     // free stack

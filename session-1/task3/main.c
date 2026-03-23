@@ -13,6 +13,12 @@ int main( void ) {
     push(stack,createData(1));
     displayStack (stack);
 
+    push(stack,createData(57));
+    displayStack (stack);
+
+    pop(stack);
+    displayStack (stack);
+
     // free stack dynamic memory
     freeStack( stack );
     free( stack );
