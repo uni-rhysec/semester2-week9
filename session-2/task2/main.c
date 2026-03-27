@@ -14,6 +14,27 @@ int main( void ) {
     displayList( list );
 
     // further insert operations here, use displayList() to verify
+    insert( list, createData(4), 1 );
+    displayList( list );
+
+    insert( list, createData(5), 1 );
+    displayList( list );
+    insert( list, createData(6), 0 );
+    displayList( list );
+    insert( list, createData(27), 4 );
+    displayList( list );
+
+    delete( list, 1);
+    displayList( list );
+
+    delete( list, 1);
+    displayList( list );
+
+    delete( list, 5);
+    displayList( list );
+
+    delete( list, 2);
+    displayList( list );
 
     // free list dynamic memory
     freeList( list );

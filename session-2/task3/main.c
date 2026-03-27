@@ -24,6 +24,11 @@ int main( void ) {
 
     // traverse to print node data
     traversePre( tree->root );
+    printf("\n");
+    traverseIn( tree->root );
+    printf("\n");
+    traversePost( tree->root );
+    printf("\n");
 
     // free memory
     deallocateTree( tree->root );
